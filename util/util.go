@@ -17,3 +17,10 @@ func ReadFile(path string) []string {
 	CheckWithFatalError(err, "Failed to read file %v")
 	return strings.Split(string(dat), "\n")
 }
+
+func Abs(val int) int {
+	if val < 0 {
+		return -val
+	}
+	return val
+}
