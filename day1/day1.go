@@ -14,8 +14,7 @@ type Solver struct {
 	list2 []int
 }
 
-func New() Solver {
-	lines := util.ReadFile("day1/input.txt")
+func New(lines []string) Solver {
 	var list1 []int
 	var list2 []int
 
